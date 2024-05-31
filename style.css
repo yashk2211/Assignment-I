@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assests/3357683.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.head{
+    width: 100%;
+}
+
+.head h1{
+    font-family: "Rubik", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.6;
+    color: wheat;
+    padding-top: 50px;
+
+}
+
+.head h1 span{
+    color: brown;
+}
+
+.flex{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-block: 30px;
+    margin-top: 25px;
+    box-shadow: 10px 0px 20px 5px rgba(247, 246, 246, 0.895);
+    
+}
+
+/* .websites{
+    border: 4px solid wheat;
+} */
+
+.websites ul{
+    list-style: none;
+}
+
+.websites ul li{
+    font-size: 30px;
+    color: white;
+    margin-block: 20px;
+}
+
+.websites ul li a{
+    font-size: 30px;
+    color: white;
+    margin-block: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+.websites ul li a:hover{
+    color: rgb(240, 200, 234);
+    font-weight: 800;
+    text-decoration: underline;
+    
+    transition: ease-in-out;
+}
+
+.websites ul span{
+    font-size: 19px;
+    color: rgb(205, 64, 64);
+    padding-right: 5px;
+
+}
+
+.websites ul span:hover{
+    color: azure;
+
+}
+
+.ui ul span{
+    font-size: 19px;
+    color: rgb(205, 64, 64);
+    padding-right: 5px;
+
+}
+
+.ui ul span:hover{
+    color: azure;
+
+}
+
+.ui ul{
+    list-style: none;
+}
+
+.ui ul li{
+    font-size: 30px;
+    color: white;
+    margin-block: 20px;
+    
+}
+
+.ui ul li a{
+    font-size: 30px;
+    color: white;
+    margin-block: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    
+    
+}
+.ui ul li:hover{
+    transform: rotatex(150deg);
+}
+.websites ul li:hover{
+    transform: rotatex(150deg);
+}
+
+.ui ul li a:hover{
+    color: rgb(240, 200, 234);
+    text-decoration: underline;
+    
+    
+}
+
+.sub{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 40px;
+    margin-top: 15px;
+    
+}
+
+.sub p{
+    font-size: 20px;
+    color: rgb(236, 155, 125);
+    border: 1px solid wheat;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*Responsive*/
+
+@media (max-width: 480px) {
+    .main-container{
+        width: 100%;        ;
+        height: auto;
+    }
+
+    .flex{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .websites ul li a{
+        font-size: 20px;
+    }
+
+    .ui{
+        border-top: 1px solid whitesmoke;
+    }
+
+    .ui ul li a{
+        font-size: 19px;
+    }
+    .head h1{
+        font-family: "Rubik", sans-serif;
+        font-size: 40px;}
+}
